@@ -1,0 +1,72 @@
+/* Gifts */
+#gifts {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gift-card {
+  background-color: #f9f9f9;
+}
+
+.gift-card > img {
+  width: 100%;
+}
+
+.gift-title {
+  font-family: "Lora", serif;
+  font-size: clamp(14px, 2.84vw, 24px);
+  font-weight: 500;
+  color: #202020;
+  margin-top: 41px;
+}
+
+.gift-description {
+  margin-top: 21px;
+  max-width: 765px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 2.13vw, 18px);
+  font-weight: 400;
+}
+
+.gift-card a {
+  display: block;
+  text-decoration: none;
+  color: #b7926a;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 2.2vw, 20px);
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.gift-title,
+.gift-description,
+.gift-card a {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  #gifts {
+    grid-template-columns: 1fr;
+    margin: 22px auto;
+    padding: 0 19px;
+  }
+
+  .gift-title {
+    margin-top: 22px;
+  }
+
+  .gift-description {
+    line-height: 22px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  .gift-title,
+  .gift-description,
+  .gift-card a {
+    padding-left: 14px;
+  }
+}

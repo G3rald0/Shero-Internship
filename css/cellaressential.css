@@ -1,0 +1,62 @@
+/* Cellar Essential */
+#cellarEssentials {
+  margin-top: 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cellarProducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 13px;
+}
+
+.cellarproduct img {
+  width: 100%;
+}
+
+.product-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
+  max-width: 300px;
+}
+
+.product-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #b7926a;
+  margin-top: 8px;
+}
+
+.product-price span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #00000052;
+  margin-left: 11px;
+}
+
+@media only screen and (max-width: 576px) {
+    #cellarEssentials{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    #cellarProducts{
+        grid-template-columns: 1fr;
+        padding: 0 19px;
+        margin-top: 20px;
+    }
+
+    .cellarproduct img{
+      margin-top: 33px;
+    }
+
+    .product-name{
+        max-width: 100%;
+    }
+}
